@@ -10,6 +10,14 @@ div[role="group"][tabindex] {
 
 @tailwind components;
 
+.link {
+    @apply small-caps;
+}
+
+.link:hover {
+    @apply text-main;
+}
+
 @tailwind utilities;
 
 .small-caps {

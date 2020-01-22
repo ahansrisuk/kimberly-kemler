@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
           { children }
         </main>
         <footer className="font-min pb-3">
-          © {new Date().getFullYear()}, Designed by Allen Hansrisuk
+          © {new Date().getFullYear()}, Created by Allen Hansrisuk.
         </footer>
       </div>
     </>
