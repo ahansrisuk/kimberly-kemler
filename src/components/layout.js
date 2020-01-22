@@ -26,11 +26,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet"></link>
-      <div className="w-full font-body">
-        <main>
+      <div className="h-full flex flex-col items-center font-body">
+        <main className="flex w-4/5 h-full">
           { children }
         </main>
-        <footer>
+        <footer className="font-min pb-3">
           © {new Date().getFullYear()}, Designed by Allen Hansrisuk
         </footer>
       </div>

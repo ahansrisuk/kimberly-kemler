@@ -4,12 +4,23 @@ import { Link } from "gatsby"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
+import Triangle from "../images/triangle.svg"
 import "../components/tailwind.css"
 
 const IndexPage = () => (
   <>
   <Layout>
-    <h1 className="text-5xl">Hello World</h1>
+    <div className="flex justify-center items-center m-auto">
+      <h1 className="text-4xl mr-24 z-10">Kimberly Kemler</h1>
+      <div className="flex flex-col z-10">
+        <Link to="/poems" className="text-max small-caps z-10">Poems</Link>
+        <Link to="/about" className="text-max small-caps z-10">About</Link>
+        <Link className="text-max small-caps z-10">Contact</Link>
+      </div>
+      <div className="absolute right-0 z-0 overflow-x-hidden">
+        <img src={Triangle} alt="triangle" className="h-full w-full ml-20" />
+      </div>
+    </div>
   </Layout>
     {/* <SEO title="Home" />
     <h1>Hi people</h1>

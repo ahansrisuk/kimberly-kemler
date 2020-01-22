@@ -1,5 +1,13 @@
 @tailwind base;
 
+html, body, #___gatsby {
+    @apply h-full;
+}
+
+div[role="group"][tabindex] {
+    @apply h-full;
+}
+
 @tailwind components;
 
 @tailwind utilities;
