@@ -9,7 +9,7 @@ import "../components/tailwind.css"
 const IndexPage = () => (
   <>
   <Layout>
-    <h1 className="block">Hello World</h1>
+    <h1 className="text-5xl">Hello World</h1>
   </Layout>
     {/* <SEO title="Home" />
     <h1>Hi people</h1>

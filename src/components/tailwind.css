@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.small-caps {
+    font-variant: small-caps;
+}

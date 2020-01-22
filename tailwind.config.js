@@ -249,6 +249,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      body: ['EB Garamond', 'serif']
     },
     fontSize: {
       xs: '0.75rem',

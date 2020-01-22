@@ -25,7 +25,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="w-full">
+      <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet"></link>
+      <div className="w-full font-body">
         <main>
           { children }
         </main>
