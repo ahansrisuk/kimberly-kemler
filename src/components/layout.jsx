@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet"></link>
       <div className="h-full flex flex-col items-center font-body">
-        <main className="flex w-4/5 h-full">
+        <main className="flex w-2/3 h-full">
           { children }
         </main>
         <footer className="font-min pb-3">
