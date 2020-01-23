@@ -56,7 +56,7 @@ const Poems = () => (
           </tbody>
         </table>
         <div className="absolute left-0 z-0">
-          <img src={Circle} alt="circle" className="h-full w-full ml-20" />
+          <img src={Circle} alt="circle" className="ml-24" />
         </div>
       </div>
     </div>
