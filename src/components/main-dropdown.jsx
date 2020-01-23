@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "gatsby"
+
+
+import instagram from "../images/icons/instagram.svg";
+import twitter from "../images/icons/twitter.svg";
+import mail from "../images/icons/mail.svg";
 
 class MainDropdown extends Component {
     constructor() {
@@ -33,21 +37,21 @@ class MainDropdown extends Component {
                 {this.props.children}
                 {this.state.show &&
                     /* menu items */
-                    <div className="bg-white rounded absolute right-0">
+                    <div className="bg-white rounded absolute right-0 pl-8 pr-2">
                         {/* single row */}
-                        <div className="flex justify-end">
-                            <div className="mr-4">twitter</div>
-                            <div>icon</div>
+                        <div className="flex justify-end hover:text-main mb-2">
+                            <a className="mr-6" href="https://twitter.com">twitter</a>
+                            <img src={twitter} alt="twitter"></img>
                         </div>
                         {/* single row */}
-                        <div className="flex justify-end">
-                            <div className="mr-4">instagram</div>
-                            <div>icon</div>
+                        <div className="flex justify-end hover:text-main mb-2">
+                            <a className="mr-6" href="https://www.instagram.com/kmykem/">instagram</a>
+                            <img src={instagram} alt="instagram"></img>
                         </div>
                         {/* single row */}
-                        <div className="flex justify-end">
-                            <div className="mr-4">email</div>
-                            <div>icon</div>
+                        <div className="flex justify-end hover:text-main">
+                            <a className="mr-6" href="#">email</a>
+                            <img src={mail} alt="mail"></img>
                         </div>
                     </div>
                 }
