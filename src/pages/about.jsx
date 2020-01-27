@@ -1,19 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import MainDropdown from "../components/main-dropdown"
-import Triangle from "../images/triangle.svg"
-import "../components/tailwind.css"
+import SEO from '../components/seo';
+import Layout from '../components/layout';
+import MainDropdown from '../components/main-dropdown';
+import Triangle from '../images/triangle.svg';
+import '../components/tailwind.css';
 
 const IndexPage = () => (
-<>
-<Layout>
-    <SEO title="About" />
+    <>
+        <Layout>
+            <SEO title="About" />
+        </Layout>
+    </>
+);
 
-</Layout>
-</>
-)
-
-export default IndexPage
+export default IndexPage;

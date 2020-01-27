@@ -5,40 +5,41 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import "./tailwind.css"
+import './tailwind.css';
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+    const data = useStaticQuery(graphql`
+        query SiteTitleQuery {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
         }
-      }
-    }
-  `)
+    `);
 
-  return (
-    <>
-      <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet"></link>
-      <div className="h-full flex flex-col items-center font-body">
-        <main className="flex w-2/3 h-full">
-          { children }
-        </main>
-        <footer className="font-min pb-3">
-          © {new Date().getFullYear()}, Created by Allen Hansrisuk
-        </footer>
-      </div>
-    </>
-  )
-}
+    return (
+        <>
+            <link
+                href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap"
+                rel="stylesheet"
+            ></link>
+            <div className="h-full flex flex-col items-center font-body">
+                <main className="flex w-2/3 h-full">{children}</main>
+                <footer className="font-min pb-3">
+                    © {new Date().getFullYear()}, Created by Allen Hansrisuk
+                </footer>
+            </div>
+        </>
+    );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+    children: PropTypes.node.isRequired,
+};
 
-export default Layout
+export default Layout;
