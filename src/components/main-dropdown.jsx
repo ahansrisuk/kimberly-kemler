@@ -40,7 +40,12 @@ class MainDropdown extends Component {
                     <div className={"bg-white rounded absolute right-0 pl-8 pr-2 overflow-hidden " + (this.state.show ? 'open' : 'closed')}>
                         {/* single row */}
                         <div className="flex justify-end hover:text-main mb-2">
-                            <a className="mr-6" href="https://twitter.com/kimberlykemler">
+                            <a 
+                                className="mr-6"
+                                href="https://twitter.com/kimberlykemler"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 @KimberlyKemler
                             </a>
                             <img src={twitter} alt="twitter"></img>
@@ -50,6 +55,8 @@ class MainDropdown extends Component {
                             <a
                                 className="mr-6"
                                 href="https://www.instagram.com/kmykem/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 @kmykem
                             </a>
@@ -57,7 +64,7 @@ class MainDropdown extends Component {
                         </div>
                         {/* single row */}
                         <div className="flex justify-end hover:text-main">
-                            <a className="mr-6 hover:underline" href="mailto:kkemler115@gmail.com">
+                            <a className="mr-6" href="mailto:kkemler115@gmail.com">
                                 kkemler115@gmail.com
                             </a>
                             <img src={mail} alt="mail"></img>
