@@ -28,6 +28,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `tpsfvq4y97hl`,
+        accessToken: `G2Zde3WFzlJ_RYylZn2g3M8tMtw_jKD5OtG_qFc-bnY`,
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

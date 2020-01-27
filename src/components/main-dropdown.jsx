@@ -29,6 +29,8 @@ class MainDropdown extends Component {
     render() {
         return (
             <div
+                role="button"
+                tabIndex="0"
                 className="relative"
                 onMouseEnter={this.showMenu}
                 onMouseLeave={this.hideMenu}
