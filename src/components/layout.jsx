@@ -17,10 +17,13 @@ const Layout = ({ children }) => {
             site {
                 siteMetadata {
                     title
+                    author
                 }
             }
         }
     `);
+
+    const author = data.site.siteMetadata.author;
 
     return (
         <>
@@ -30,8 +33,8 @@ const Layout = ({ children }) => {
             ></link>
             <div className="h-full flex flex-col items-center font-body">
                 <main className="flex w-2/3 h-full">{children}</main>
-                <footer className="font-min pb-3">
-                    © {new Date().getFullYear()}, Created by Allen Hansrisuk
+                <footer className="font-min my-3">
+                    © {new Date().getFullYear()}, Created by {author} 
                 </footer>
             </div>
         </>

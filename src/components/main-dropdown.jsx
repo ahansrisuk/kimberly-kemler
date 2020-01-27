@@ -34,13 +34,12 @@ class MainDropdown extends Component {
                 onMouseLeave={this.hideMenu}
             >
                 {this.props.children}
-                {this.state.show && (
-                    /* menu items */
-                    <div className="bg-white rounded absolute right-0 pl-8 pr-2">
+                    {/* /* menu items */ }
+                    <div className={"bg-white rounded absolute right-0 pl-8 pr-2 overflow-hidden " + (this.state.show ? 'open' : 'closed')}>
                         {/* single row */}
                         <div className="flex justify-end hover:text-main mb-2">
-                            <a className="mr-6" href="https://twitter.com">
-                                twitter
+                            <a className="mr-6" href="https://twitter.com/kimberlykemler">
+                                @KimberlyKemler
                             </a>
                             <img src={twitter} alt="twitter"></img>
                         </div>
@@ -50,19 +49,19 @@ class MainDropdown extends Component {
                                 className="mr-6"
                                 href="https://www.instagram.com/kmykem/"
                             >
-                                instagram
+                                @kmykem
                             </a>
                             <img src={instagram} alt="instagram"></img>
                         </div>
                         {/* single row */}
                         <div className="flex justify-end hover:text-main">
-                            <a className="mr-6" href="#">
-                                email
+                            <a className="mr-6 hover:underline" href="mailto:kkemler115@gmail.com">
+                                kkemler115@gmail.com
                             </a>
                             <img src={mail} alt="mail"></img>
                         </div>
                     </div>
-                )}
+                
             </div>
         );
     }

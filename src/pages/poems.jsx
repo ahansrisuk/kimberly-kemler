@@ -13,12 +13,8 @@ const Poems = () => (
         <div className="w-full flex items-center flex-col">
             <Navbar />
             {/* list of poems */}
-            <div className="w-4/5 h-full flex items-center">
-                <table className="table-fixed w-full z-10">
-                    <thead>
-                        <th className="w-2/3"></th>
-                        <th className="w-1/3"></th>
-                    </thead>
+            <div className="w-4/5 h-full flex items-center justify-center">
+                <table className="w-2/3 z-10">
                     <tbody>
                         <Poem
                             name="From Oblivious Waters"
@@ -52,7 +48,7 @@ const Poems = () => (
                     </tbody>
                 </table>
                 <div className="absolute left-0 z-0">
-                    <img src={Circle} alt="circle" className="ml-24" />
+                    <img src={Circle} alt="circle" className="ml-56" />
                 </div>
             </div>
         </div>

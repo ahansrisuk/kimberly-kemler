@@ -23,3 +23,14 @@ div[role="group"][tabindex] {
 .small-caps {
     font-variant: small-caps;
 }
+
+.open {
+    @apply transition-opacity transition-1000 transition-ease opacity-100;
+}
+
+.closed {
+    @apply transition-opacity transition-1000 transition-ease opacity-0;
+}
+
+
+
