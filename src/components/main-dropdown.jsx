@@ -43,7 +43,7 @@ class MainDropdown extends Component {
             <div
                 role="button"
                 tabIndex="0"
-                className="lg:relative"
+                className="lg:relative outline-none"
                 onClick={isMobile ? this.handleClick : undefined}
                 onMouseEnter={isMobile ? undefined : this.showMenu}
                 onMouseLeave={this.hideMenu}
