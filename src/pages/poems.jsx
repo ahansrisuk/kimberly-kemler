@@ -36,7 +36,7 @@ const Poems = (query) => {
                 <Navbar />
                 {/* list of poems */}
                 <div className="w-full lg:w-4/5 h-full flex items-center">
-                    <table className="-mt-20 lg:m-auto z-10">
+                    <table className="lg:m-auto z-10">
                         <tbody>
                             {poems.map( (poem, index) => 
                                 <Poem
