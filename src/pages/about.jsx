@@ -26,14 +26,13 @@ const IndexPage = (query) => {
                 <SEO title="About" />
                 <div className="w-full flex items-center flex-col">
                     <Navbar />
-                    <div className="w-4/5 h-full flex flex-col items-center mt-10">
-                        <div className="w-2/3">
+                    <div className="w-full lg:w-4/5 h-full flex flex-col items-center mt-10">
+                        <div className="lg:w-2/3">
                             <img src={Photo} alt="Kimberly Kemler" className="m-auto"></img>
-                            <div className="mt-4">
+                            <div className="mt-4 text-xs lg:text-base">
                                 {aboutMe}
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </Layout>

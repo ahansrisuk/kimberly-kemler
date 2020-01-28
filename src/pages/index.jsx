@@ -12,16 +12,16 @@ const IndexPage = () => (
         <Layout>
             <SEO title="Home" />
             <div className="flex justify-center items-center m-auto">
-                <h1 className="text-4xl mr-24 z-10">Kimberly Kemler</h1>
+                <h1 className="text-2xl lg:text-4xl mr-16 lg:mr-24 z-10">Kimberly Kemler</h1>
                 <div className="flex flex-col z-10">
-                    <Link to="/poems" className="text-max link z-10">
+                    <Link to="/poems" className="text-2xl lg:text-max link z-10">
                         Poems
                     </Link>
-                    <Link to="/about" className="text-max link z-10">
+                    <Link to="/about" className="text-2xl lg:text-max link z-10">
                         About
                     </Link>
                     <MainDropdown>
-                        <Link className="text-max link z-10">Contact</Link>
+                        <span className="text-2xl lg:text-max lg:hover:text-main small-caps z-10">Contact</span>
                     </MainDropdown>
                 </div>
                 <div className="absolute right-0 z-0 overflow-x-hidden">

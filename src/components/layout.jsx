@@ -31,9 +31,9 @@ const Layout = ({ children }) => {
                 href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap"
                 rel="stylesheet"
             ></link>
-            <div className="h-full flex flex-col items-center font-body">
-                <main className="flex w-2/3 h-full">{children}</main>
-                <footer className="font-min my-3">
+            <div className="h-full flex flex-col items-center font-body overflow-x-hidden">
+                <main className="flex w-4/5 lg:w-2/3 flex-grow overflow-y-scroll">{children}</main>
+                <footer className="text-min lg:text-base my-3">
                     © {new Date().getFullYear()}, Created by {author} 
                 </footer>
             </div>

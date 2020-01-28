@@ -35,11 +35,12 @@ const Poems = (query) => {
             <div className="w-full flex items-center flex-col">
                 <Navbar />
                 {/* list of poems */}
-                <div className="w-4/5 h-full flex items-center">
-                    <table className="m-auto z-10">
+                <div className="w-full lg:w-4/5 h-full flex items-center">
+                    <table className="-mt-20 lg:m-auto z-10">
                         <tbody>
-                            {poems.map( (poem) => 
+                            {poems.map( (poem, index) => 
                                 <Poem
+                                    key={index}
                                     url={poem.url}
                                     publication={poem.publication}
                                 >
@@ -49,7 +50,7 @@ const Poems = (query) => {
                             )}
                         </tbody>
                     </table>
-                    <div className="absolute left-0 z-0">
+                    <div className="absolute left-0 z-0 overflow-x-hidden">
                         <img src={Circle} alt="circle" className="ml-56" />
                     </div>
                 </div>

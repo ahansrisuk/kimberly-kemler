@@ -3,23 +3,23 @@ import { Link } from 'gatsby';
 import MainDropdown from './main-dropdown';
 
 const Navbar = () => (
-    <nav className="flex justify-between mt-6 w-full items-end z-10">
+    <nav className="flex justify-between mt-6 w-full items-end z-20">
         {/* Right side of nav */}
-        <Link to="/" className="text-2xl hover:text-main">
+        <Link to="/" className="text-min lg:text-2xl hover:text-main">
             Kimberly Kemler
         </Link>
         {/* Left side of nav */}
-        <div className="flex">
-            <Link to="/poems" className="link text-4xl mr-4">
+        <div className="flex items-end">
+            <Link to="/poems" className="text-sm link lg:text-4xl mr-4">
                 Poems
             </Link>
-            <Link to="/about" className="link text-4xl mr-4">
+            <Link to="/about" className="text-sm link lg:text-4xl mr-4">
                 About
             </Link>
             <MainDropdown>
-                <Link to="/" className="link text-4xl">
+                <span className="text-sm small-caps lg:hover:text-main lg:text-4xl">
                     Contact
-                </Link>
+                </span>
             </MainDropdown>
         </div>
     </nav>
