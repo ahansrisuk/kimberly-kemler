@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import MainDropdown from './main-dropdown';
 
 const Navbar = () => (
-    <nav className="flex justify-between mt-6 w-full items-end">
+    <nav className="flex justify-between mt-6 w-full items-end z-10">
         {/* Right side of nav */}
         <Link to="/" className="text-2xl hover:text-main">
             Kimberly Kemler
