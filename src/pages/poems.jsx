@@ -1,4 +1,5 @@
 import React from 'react';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import Layout from '../components/layout';
 import Navbar from '../components/navbar';
@@ -12,7 +13,9 @@ export const query = graphql`
     query PoemsQuery {
         allContentfulPoem(sort: {fields: publishedDate, order: DESC}) {
             nodes {
-                name
+                name {
+                    json
+                }
                 url
                 publication
                 publishedDate
@@ -32,15 +35,17 @@ const Poems = (query) => {
             <div className="w-full flex items-center flex-col">
                 <Navbar />
                 {/* list of poems */}
-                <div className="w-4/5 h-full flex items-center justify-center">
-                    <table className="w-2/3 z-10">
+                <div className="w-4/5 h-full flex items-center">
+                    <table className="m-auto z-10">
                         <tbody>
                             {poems.map( (poem) => 
                                 <Poem
-                                    name={poem.name}
                                     url={poem.url}
                                     publication={poem.publication}
-                                ></Poem>
+                                >
+                                    {/* poem display title with rich text styling */}
+                                    {documentToReactComponents(poem.name.json)}
+                                </Poem>
                             )}
                         </tbody>
                     </table>

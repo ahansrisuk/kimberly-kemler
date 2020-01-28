@@ -3,9 +3,9 @@ import React from 'react';
 const Poem = props => (
     <tr>
         <td className="py-4 text-xl small-caps">
-            <a href={props.url}>"{props.name}"</a>
+            <a href={props.url}>{props.children}</a>
         </td>
-        <td className="pl-0 text-xl italic">{props.publication}</td>
+        <td className="pl-32 text-xl italic">{props.publication}</td>
     </tr>
 );
 
