@@ -43,7 +43,7 @@ class MainDropdown extends Component {
             <div
                 role="button"
                 tabIndex="0"
-                className="lg:relative outline-none"
+                className="md:relative outline-none"
                 onClick={isMobile ? this.handleClick : undefined}
                 onMouseEnter={isMobile ? undefined : this.showMenu}
                 onMouseLeave={this.hideMenu}
@@ -54,7 +54,7 @@ class MainDropdown extends Component {
                     /* menu items */ 
                     <div className="bg-white rounded absolute right-0 pl-8 pr-2 overflow-hidden">
                         {/* single row */}
-                        <div className="flex justify-end hover:text-main pb-2 text-sm lg:text-base">
+                        <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
                             <a 
                                 className="mr-6"
                                 href="https://twitter.com/kimberlykemler"
@@ -66,7 +66,7 @@ class MainDropdown extends Component {
                             <img src={twitter} alt="twitter"></img>
                         </div>
                         {/* single row */}
-                        <div className="flex justify-end hover:text-main pb-2 text-sm lg:text-base">
+                        <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
                             <a
                                 className="mr-6"
                                 href="https://www.instagram.com/kmykem/"
@@ -78,7 +78,7 @@ class MainDropdown extends Component {
                             <img src={instagram} alt="instagram"></img>
                         </div>
                         {/* single row */}
-                        <div className="flex justify-end hover:text-main text-sm lg:text-base">
+                        <div className="flex justify-end hover:text-main text-sm md:text-base">
                             <a className="mr-6" href="mailto:kkemler115@gmail.com">
                                 kkemler115@gmail.com
                             </a>
