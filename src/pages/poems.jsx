@@ -1,11 +1,11 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import Layout from '../components/layout';
 import Navbar from '../components/navbar';
 import Poem from '../components/poem';
 import SEO from '../components/seo';
-import { graphql } from "gatsby";
 
 import Circle from '../images/circle.svg';
 

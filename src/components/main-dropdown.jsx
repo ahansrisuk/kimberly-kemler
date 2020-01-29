@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { isMobile } from 'react-device-detect';
+import Anime, { anime } from 'react-anime';
 
 import instagram from '../images/icons/instagram.svg';
 import twitter from '../images/icons/twitter.svg';
@@ -49,43 +50,49 @@ class MainDropdown extends Component {
                 onMouseLeave={this.hideMenu}
             >
                 {this.props.children}
-
-                {this.state.show &&
-                    /* menu items */ 
-                    <div className="bg-white rounded absolute right-0 pl-8 pr-2 overflow-hidden">
-                        {/* single row */}
-                        <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
-                            <a 
-                                className="mr-6"
-                                href="https://twitter.com/kimberlykemler"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @KimberlyKemler
-                            </a>
-                            <img src={twitter} alt="twitter"></img>
+                <Anime
+                    duration={600}
+                    opacity={[0, 1]}
+                    translateY={[-20, 0]}
+                    easing="easeInOutSine"
+                    >
+                    {this.state.show &&
+                        /* menu items */ 
+                        <div className="bg-white rounded absolute right-0 pl-8 pr-2 overflow-hidden">
+                            {/* single row */}
+                            <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
+                                <a 
+                                    className="mr-6"
+                                    href="https://twitter.com/kimberlykemler"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    @KimberlyKemler
+                                </a>
+                                <img src={twitter} alt="twitter"></img>
+                            </div>
+                            {/* single row */}
+                            <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
+                                <a
+                                    className="mr-6"
+                                    href="https://www.instagram.com/kmykem/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    @kmykem
+                                </a>
+                                <img src={instagram} alt="instagram"></img>
+                            </div>
+                            {/* single row */}
+                            <div className="flex justify-end hover:text-main text-sm md:text-base">
+                                <a className="mr-6" href="mailto:kkemler115@gmail.com">
+                                    kkemler115@gmail.com
+                                </a>
+                                <img src={mail} alt="mail"></img>
+                            </div>
                         </div>
-                        {/* single row */}
-                        <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
-                            <a
-                                className="mr-6"
-                                href="https://www.instagram.com/kmykem/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                @kmykem
-                            </a>
-                            <img src={instagram} alt="instagram"></img>
-                        </div>
-                        {/* single row */}
-                        <div className="flex justify-end hover:text-main text-sm md:text-base">
-                            <a className="mr-6" href="mailto:kkemler115@gmail.com">
-                                kkemler115@gmail.com
-                            </a>
-                            <img src={mail} alt="mail"></img>
-                        </div>
-                    </div>
-                }
+                    }
+                </Anime>
             </div>
         );
     }
