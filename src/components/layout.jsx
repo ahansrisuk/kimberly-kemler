@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
                 rel="stylesheet"
             ></link>
             <div className="h-full flex flex-col items-center font-body overflow-x-hidden">
-                <main className="flex w-4/5 md:w-2/3 flex-grow overflow-y-scroll">{children}</main>
+                <main className="flex w-4/5 md:w-2/3 flex-grow">{children}</main>
                 <footer className="text-min md:text-base my-3">
                     © {new Date().getFullYear()}, Created by {author} 
                 </footer>
