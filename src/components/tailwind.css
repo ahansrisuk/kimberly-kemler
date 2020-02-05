@@ -15,7 +15,7 @@ div[role="group"][tabindex] {
 }
 
 .link:hover {
-    @apply text-main;
+    @apply text-gray-500;
 }
 
 @tailwind utilities;

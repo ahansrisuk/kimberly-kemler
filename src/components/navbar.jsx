@@ -5,7 +5,7 @@ import MainDropdown from './main-dropdown';
 const Navbar = () => (
     <nav className="flex justify-between mt-6 w-full items-end z-20">
         {/* Right side of nav */}
-        <Link to="/" className="text-min md:text-2xl hover:text-main">
+        <Link to="/" className="text-min md:text-2xl hover:text-gray-500">
             Kimberly Kemler
         </Link>
         {/* Left side of nav */}
@@ -17,7 +17,7 @@ const Navbar = () => (
                 About
             </Link>
             <MainDropdown>
-                <span className="text-sm small-caps md:hover:text-main md:text-4xl">
+                <span className="text-sm small-caps hover:text-gray-400 md:text-4xl">
                     Contact
                 </span>
             </MainDropdown>

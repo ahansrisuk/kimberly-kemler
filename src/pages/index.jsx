@@ -20,8 +20,11 @@ const IndexPage = () => (
                     <Link to="/about" className="text-2xl md:text-max link z-10">
                         About
                     </Link>
+                    <Link to="/contact" className="text-2xl md:text-max link z-10">
+                        Contact
+                    </Link>
                     <MainDropdown>
-                        <span className="text-2xl md:text-max md:hover:text-main small-caps z-10">Contact</span>
+                        <span className="text-2xl md:text-max hover:text-gray-400 small-caps z-10">Contact</span>
                     </MainDropdown>
                 </div>
                 <div className="absolute right-0 z-0 overflow-x-hidden">
