@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
             ></link>
             <div className="h-full flex flex-col items-center font-body overflow-x-hidden">
                 <main className="flex w-4/5 md:w-2/3 flex-grow">{children}</main>
-                <footer className="text-min md:text-base my-3">
+                <footer className="text-min md:text-base my-3 z-50">
                     © {new Date().getFullYear()}, Created by {author} 
                 </footer>
             </div>
