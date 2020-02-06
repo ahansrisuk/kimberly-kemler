@@ -16,7 +16,7 @@ const IndexPage = () => (
             <div className="w-full flex items-center flex-col">
                 <Navbar />
                 <div className="flex flex-col m-auto">
-                    <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
+                    <div className="flex justify-end hover:text-gray-500 pb-2 text-sm md:text-base">
                         <a 
                             className="mr-6"
                             href="https://twitter.com/kimberlykemler"
@@ -28,7 +28,7 @@ const IndexPage = () => (
                         <img src={twitter} alt="twitter"></img>
                     </div>
                     {/* single row */}
-                    <div className="flex justify-end hover:text-main pb-2 text-sm md:text-base">
+                    <div className="flex justify-end hover:text-gray-500 pb-2 text-sm md:text-base">
                         <a
                             className="mr-6"
                             href="https://www.instagram.com/kmykem/"
@@ -40,7 +40,7 @@ const IndexPage = () => (
                         <img src={instagram} alt="instagram"></img>
                     </div>
                     {/* single row */}
-                    <div className="flex justify-end hover:text-main text-sm md:text-base">
+                    <div className="flex justify-end hover:text-gray-500 text-sm md:text-base">
                         <a className="mr-6" href="mailto:kkemler115@gmail.com">
                             kkemler115@gmail.com
                         </a>
