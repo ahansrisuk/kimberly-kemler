@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import MainDropdown from './main-dropdown';
 
 const Navbar = () => (
     <nav className="flex justify-between mt-4 w-full items-end z-20">
