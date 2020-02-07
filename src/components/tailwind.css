@@ -32,5 +32,9 @@ div[role="group"][tabindex] {
     @apply transition-opacity transition-1000 transition-ease opacity-0;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
 
 
