@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import SEO from '../components/seo';
 import Layout from '../components/layout';
@@ -8,10 +9,10 @@ import Photo from '../images/portrait.jpg';
 import '../components/tailwind.css';
 
 export const query = graphql`
-    query AboutMeQuery {
-        contentfulText(name: {eq: "About Me"}) {
-            body {
-                body
+    query AboutMe {
+        contentfulText {
+            childContentfulTextBodyRichTextNode {
+               json
             }
         }
     }
@@ -19,7 +20,7 @@ export const query = graphql`
 
 const IndexPage = (query) => {
 
-    const aboutMe = query.data.contentfulText.body.body;
+    const aboutMe = query.data.contentfulText.childContentfulTextBodyRichTextNode.json;
 
     return (
         <>
@@ -31,7 +32,7 @@ const IndexPage = (query) => {
                         <div className="md:w-7/8">
                             <img src={Photo} alt="Kimberly Kemler" className="m-auto"></img>
                             <div className="mt-4 text-xs md:text-base">
-                                {aboutMe}
+                                {documentToReactComponents(aboutMe)}
                             </div>
                         </div>
                     </div>
